@@ -15,8 +15,7 @@ use App\Http\Controllers\{QrCodeController};
 
 Route::get('/', function () {
     return view('welcome');
-});
-
+})->name('home');
 
 Route::prefix('qr-codes')->group(function () {
     Route::name('qr.')->group(function () {
