@@ -1,7 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e18d0877-57b6-4872-9bce-55dfdb9cba19" name="Default Changelist" comment="" />
+    <list default="true" id="e18d0877-57b6-4872-9bce-55dfdb9cba19" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/qr-code-generator.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/qr-code-generator.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/QrCodeController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/QrCodeController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Models/QrCode.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/QrCode.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2020_11_27_112547_create_qr_codes_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_11_27_112547_create_qr_codes_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -121,6 +130,8 @@
       <path value="$PROJECT_DIR$/vendor/tijsverkoyen/css-to-inline-styles" />
       <path value="$PROJECT_DIR$/vendor/graham-campbell/result-type" />
       <path value="$PROJECT_DIR$/vendor/phpdocumentor/reflection-docblock" />
+      <path value="$PROJECT_DIR$/vendor/chillerlan/php-qrcode" />
+      <path value="$PROJECT_DIR$/vendor/chillerlan/php-settings-container" />
     </include_path>
   </component>
   <component name="ProjectId" id="1ks30N4jiSkK1xaEDRQ5pUSXrOg" />
@@ -150,7 +161,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1606475250741</updated>
-      <workItem from="1606475257432" duration="1199000" />
+      <workItem from="1606475257432" duration="9832000" />
     </task>
     <servers />
   </component>

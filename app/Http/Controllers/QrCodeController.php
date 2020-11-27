@@ -4,9 +4,17 @@ namespace App\Http\Controllers;
 
 use App\Models\QrCode;
 use Illuminate\Http\Request;
+use App\Services\QRCodeService;
+
 
 class QrCodeController extends Controller
 {
+    protected $qr;
+    public function __construct(QRCodeService $qr)
+    {
+        $this->qr = $qr;
+    }
+
     /**
      * Display a listing of the resource.
      *
@@ -24,7 +32,7 @@ class QrCodeController extends Controller
      */
     public function create()
     {
-        //
+        return view('qr-codes.create');
     }
 
     /**
@@ -35,7 +43,20 @@ class QrCodeController extends Controller
      */
     public function store(Request $request)
     {
-        //
+
+        $valid = $request->validate([
+            'slug' => 'required|string',
+            'data' => 'required|string'
+        ]);
+
+        $base64 = $this->qr->generate($valid['data']);
+
+        $newQR = QrCode::create([
+            'slug' => $valid['slug'],
+            'data' => $valid['data'],
+            'image_base64' => $base64
+        ]);
+
     }
 
     /**
